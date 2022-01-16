@@ -5,11 +5,14 @@ from unicodedata import name
 flag=[False,False]
 turn=0
 
+
 def critical_section(process_num):
     print("process {} entered critical section".format(process_num))
 
+
 def reminder_section(process_num):
     print("process {} entered reminder section\n".format(process_num))
+
 
 def peterson(process_num):
     flag[process_num]=True
