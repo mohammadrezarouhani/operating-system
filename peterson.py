@@ -14,7 +14,8 @@ def reminder_section(process_num):
 def peterson(process_num):
     flag[process_num]=True
     j = (process_num+1)%2
-    turn=j
+    global turn 
+    turn =j
 
     while True:
         while turn==j and flag[j]:
