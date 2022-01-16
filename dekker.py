@@ -10,7 +10,7 @@ def critical_section(process_num):
 def reminder_section(process_num):
     print("process {} entered reminder section\n".format(process_num))
 
-def peterson(process_num):
+def dekker(process_num):
     j = (process_num+1)%2
     global turn 
 
