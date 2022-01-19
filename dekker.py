@@ -31,7 +31,7 @@ def dekker(process_num):
 if __name__=='__main__':
     li=[]
     for i in range(0,2):
-        li.append(Thread(target=peterson,args=(i,)))
+        li.append(Thread(target=dekker,args=(i,)))
 
     for i in li:
         i.start()
